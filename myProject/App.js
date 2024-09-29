@@ -23,7 +23,6 @@ export default function App() {
         <Stack.Screen name="Screen_03" component={Screen_03} />
         <Stack.Screen name="Screen_04" component={Screen_04} />
         <Stack.Screen name="Screen_05" component={Screen_05} />
-
       </Stack.Navigator>
     </NavigationContainer>
   );
