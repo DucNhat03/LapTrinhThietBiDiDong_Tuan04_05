@@ -7,10 +7,10 @@ export default function Screen_01({ navigation }) {
       <View style={styles.style2}>
         <Image
           source={require('../assets/data2/Container 17.png')}
-          style={{ width: "95%", height: 400, borderRadius: 25,marginTop: 100}}
+          style={{ width: "95%", height: 400, borderRadius: 25,marginTop: 180}}
         />
       </View>
-      <View style={{marginLeft: 20, marginTop: 120}}>
+      <View style={{marginLeft: 20, marginTop: 180}}>
         <Text style={{fontWeight: 'bold', fontSize: 25}}>
         Boost Productivity
         </Text>
@@ -40,7 +40,7 @@ export default function Screen_01({ navigation }) {
             // backgroundColor: "#33CCFF",
             backgroundColor: "#fff",
             borderRadius: 10,
-            marginTop: -70,
+            marginTop: -40,
             width: 350,
             height: 50,
             justifyContent: "center",
@@ -53,9 +53,9 @@ export default function Screen_01({ navigation }) {
       </View>
 
       <View style={{alignItems: 'center', top: -20}}>
-          <Text style={{fontSize: 18, color: '#33CCFF', top: -40}}>
+          <Text style={{fontSize: 18, color: '#33CCFF', top: -20, textAlign: 'center',}}>
             <Text> o </Text>
-            <Text style={{backgroundColor: '#00CCFF', borderRadius: 100, fontSize: 10}}> o </Text>
+            <Text style={{backgroundColor: '#00CCFF', borderRadius: 100, fontSize: 8,top: -2}}> o </Text>
             <Text> o </Text>
           </Text>
       </View>

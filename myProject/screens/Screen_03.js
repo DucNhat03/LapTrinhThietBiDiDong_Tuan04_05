@@ -1,5 +1,5 @@
 import React from "react";
-import CheckBox from 'react-native-check-box';
+import CheckBox from "react-native-check-box";
 import {
   StyleSheet,
   Text,
@@ -12,8 +12,10 @@ import {
 } from "react-native";
 import { useState } from "react";
 
-export default function Screen_02({ navigation }) {
+export default function Screen_03({ navigation }) {
   const [isChecked, setIsChecked] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
+  
   return (
     <View
       style={{
@@ -24,11 +26,20 @@ export default function Screen_02({ navigation }) {
         backgroundColor: "white",
       }}
     >
-      <View style={{ width: "100%" }}>
-        <Image
-            source={require=("../assets/data2/back.png")}
-            style={{ marginLeft: 20, marginTop: 20, width: 25, height: 25 }}
-        />
+      <View
+        style={{ width: "100%" }}
+      >
+        <TouchableOpacity onPress={() => navigation.navigate("Screen_01")}>
+          <Image
+            source={(require = "../assets/data2/back.png")}
+            style={{
+              marginLeft: 20,
+              marginTop: 20,
+              width: 25,
+              height: 25,
+            }}
+          />
+        </TouchableOpacity>
       </View>
 
       <View style={{ width: "100%" }}>
@@ -96,7 +107,7 @@ export default function Screen_02({ navigation }) {
 
           <View style={{ marginTop: 0, marginLeft: 20, borderRadius: 15 }}>
             <Image
-              source={(require = "../assets/data2/lock.png")}
+              source={require=("../assets/data2/lock.png")}
               style={{
                 width: 27,
                 height: 27,
@@ -106,8 +117,29 @@ export default function Screen_02({ navigation }) {
                 position: "absolute",
               }}
             />
+            <TouchableOpacity 
+              onPress={()=>{
+                setIsChecked2(!isChecked2);
+              }}
+              
+            >
+            <Image
+                source={require=("../assets/data2/eye.png")}
+                style={{
+                  width: 25,
+                  height: 25,
+                  resizeMode: "contain",
+                  right: 35,
+                  marginTop: 23,
+                  position: "absolute",
+                  transform: [{ rotate: "180deg" }]
+                }}
+            />
+            </TouchableOpacity>
+            
             <TextInput
               placeholder="Enter your password"
+              secureTextEntry={!isChecked2} 
               style={styles.input}
             ></TextInput>
           </View>
@@ -117,11 +149,11 @@ export default function Screen_02({ navigation }) {
               style={{ flex: 1, flexDirection: "row", alignItems: "center" }}
             >
               <View style={{}}>
-                  <CheckBox
-                    isChecked={isChecked}
-                    onClick={() => setIsChecked(!isChecked)}
-                  />
-            </View>
+                <CheckBox
+                  isChecked={isChecked}
+                  onClick={() => setIsChecked(!isChecked)}
+                />
+              </View>
               <Text style={{ marginLeft: 10 }}>I gree with </Text>
               <Text style={{ color: "#33CCFF", fontWeight: "bold" }}>
                 Tems & Conditions
@@ -139,7 +171,7 @@ export default function Screen_02({ navigation }) {
                 justifyContent: "center",
                 alignItems: "center",
               }}
-              onPress={() => navigation.navigate("Screen_01")}
+              onPress={() => navigation.navigate("Screen_02")}
             >
               <Text style={{ fontSize: 20, color: "white" }}>Continue</Text>
             </TouchableOpacity>
@@ -153,7 +185,6 @@ export default function Screen_02({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "green",
     alignItems: "center",
     justifyContent: "center",
   },
