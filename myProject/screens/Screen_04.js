@@ -9,10 +9,31 @@ import {
 } from "react-native";
 import { useState } from "react";
 
-export default function Screen_02({ navigation }) {
+export default function Screen_04({ navigation }) {
   const [isChecked, setIsChecked] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [price, setPrice] = useState(2.99);
+  const [selectedSize, setSelectedSize] = useState("XS"); // Kích thước mặc định
+  const handleSizeChange = (size) => {
+    setSelectedSize(size); // Cập nhật kích thước đã chọn
+    // Cập nhật giá dựa trên kích thước
+    switch (size) {
+      case "S":
+        setPrice(3.99);
+        break;
+      case "M":
+        setPrice(4.99);
+        break;
+      case "L":
+        setPrice(5.99);
+        break;
+      case "XL":
+        setPrice(6.99);
+        break;
+      default:
+        setPrice(2.99); // Giá mặc định cho XS
+    }
+  };
   return (
     <View
       style={{
@@ -220,7 +241,7 @@ export default function Screen_02({ navigation }) {
             <Text
               style={{ fontSize: 28, fontWeight: "bold", color: "#33CCFF" }}
             >
-              $2,99
+              {price}
             </Text>
             <Text
               style={{
@@ -283,6 +304,7 @@ export default function Screen_02({ navigation }) {
           >
             <TouchableOpacity
               onPress={()=>{
+                handleSizeChange("XS");
                 document.getElementById('size_xs').style.backgroundColor="#33CCFF";
                 document.getElementById('size_s').style.backgroundColor="#fff";
                 document.getElementById('size_m').style.backgroundColor="#fff";
@@ -296,6 +318,7 @@ export default function Screen_02({ navigation }) {
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={()=>{
+                  handleSizeChange("S");
                   document.getElementById('size_s').style.backgroundColor="#33CCFF";
                   document.getElementById('size_xs').style.backgroundColor="#fff";
                   document.getElementById('size_m').style.backgroundColor="#fff";
@@ -309,6 +332,7 @@ export default function Screen_02({ navigation }) {
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={()=>{
+                  handleSizeChange("M");
                   document.getElementById('size_m').style.backgroundColor="#33CCFF";
                   document.getElementById('size_xs').style.backgroundColor="#fff";
                   document.getElementById('size_s').style.backgroundColor="#fff";
@@ -322,6 +346,7 @@ export default function Screen_02({ navigation }) {
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={()=>{
+                  handleSizeChange("L");
                   document.getElementById('size_l').style.backgroundColor="#33CCFF";
                   document.getElementById('size_s').style.backgroundColor="#fff";
                   document.getElementById('size_m').style.backgroundColor="#fff";
@@ -335,6 +360,7 @@ export default function Screen_02({ navigation }) {
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={()=>{
+                  handleSizeChange("XL");
                   document.getElementById('size_xl').style.backgroundColor="#33CCFF";
                   document.getElementById('size_s').style.backgroundColor="#fff";
                   document.getElementById('size_m').style.backgroundColor="#fff";
