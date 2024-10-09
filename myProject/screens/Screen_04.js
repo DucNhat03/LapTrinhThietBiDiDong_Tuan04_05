@@ -82,7 +82,7 @@ export default function Screen_04({ navigation }) {
           <View style={{ width: "100%", marginTop: 10 }}>
             <View style={{ width: "100%" }}>
               <Image id="img1"
-                source={(require = "../assets/data2/Container 7 (3).png")}
+                source={(require = "../assets/data2/Container7(3).png")}
                 style={{
                   width: "95%",
                   height: 170,
@@ -92,7 +92,7 @@ export default function Screen_04({ navigation }) {
                 }}
               />
               <Image id="img2"
-                source={(require = "../assets/data2/Container 7 (2).png")}
+                source={(require = "../assets/data2/Container7(2).png")}
                 style={{
                   width: "95%",
                   height: 170,
@@ -102,7 +102,7 @@ export default function Screen_04({ navigation }) {
                 }}
               />
               <Image id="img3"
-                source={(require = "../assets/data2/Container 7 (1).png")}
+                source={(require = "../assets/data2/Container7(1).png")}
                 style={{
                   width: "95%",
                   height: 170,
@@ -112,7 +112,7 @@ export default function Screen_04({ navigation }) {
                 }}
               />
               <Image id="img4"
-                source={(require = "../assets/data2/Container 7 (3).png")}
+                source={(require = "../assets/data2/Container7(3).png")}
                 style={{
                   width: "95%",
                   height: 170,
@@ -122,7 +122,7 @@ export default function Screen_04({ navigation }) {
                 }}
               />
               <Image id="img5"
-                source={(require = "../assets/data2/Container 7.png")}
+                source={(require = "../assets/data2/Container7.png")}
                 style={{
                   width: "95%",
                   height: 170,
@@ -158,7 +158,7 @@ export default function Screen_04({ navigation }) {
               }}
             >
                 <Image
-                  source={(require = "../assets/data2/Container 7 (2).png")}
+                  source={(require = "../assets/data2/Container7(2).png")}
                   style={{
                     width: 70,
                     height: 70,
@@ -178,7 +178,7 @@ export default function Screen_04({ navigation }) {
               }}
             >
                 <Image
-                  source={(require = "../assets/data2/Container 7 (1).png")}
+                  source={(require = "../assets/data2/Container7(1).png")}
                   style={{
                     width: 70,
                     height: 70,
@@ -199,7 +199,7 @@ export default function Screen_04({ navigation }) {
                 }}
             >
                 <Image
-                source={(require = "../assets/data2/Container 7 (4).png")}
+                source={(require = "../assets/data2/Container7(4).png")}
                 style={{
                   width: 70,
                   height: 70,
@@ -221,7 +221,7 @@ export default function Screen_04({ navigation }) {
                 }}
             >
                 <Image
-                  source={(require = "../assets/data2/Container 7.png")}
+                  source={(require = "../assets/data2/Container7.png")}
                   style={{
                     width: 70,
                     height: 70,
@@ -270,7 +270,7 @@ export default function Screen_04({ navigation }) {
             </View>
             <View style={{marginLeft: 80, flexDirection: 'row', alignItems: 'center'}}>
                 <Image
-                  source={require=("../assets/data2/Rating 3.png")}
+                  source={require=("../assets/data2/Rating3.png")}
                   style={{
                     width: 25,
                     height: 25, 

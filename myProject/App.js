@@ -5,9 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Screen_01 from './screens/Screen_01'; 
 import Screen_02 from './screens/Screen_02'; 
-import Screen_03 from './screens/Screen_03'; 
-import Screen_04 from './screens/Screen_04'; 
-import Screen_05 from './screens/Screen_05'; 
+
 
 
 
@@ -27,3 +25,4 @@ export default function App() {
     </NavigationContainer>
   );
 }
+

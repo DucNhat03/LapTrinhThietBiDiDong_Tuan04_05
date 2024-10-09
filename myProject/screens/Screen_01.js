@@ -6,7 +6,7 @@ export default function Screen_01({ navigation }) {
     <View style={styles.container}>
       <View style={styles.style2}>
         <Image
-          source={require('../assets/data2/Container 17.png')}
+          source={require('../assets/data2/Container17.png')}
           style={{ width: "95%", height: 400, borderRadius: 25,marginTop: 180}}
         />
       </View>

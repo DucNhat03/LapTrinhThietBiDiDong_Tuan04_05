@@ -98,7 +98,7 @@ export default function Screen_03({ navigation }) {
           {/* Phần hiển thị hình ảnh và tiêu đề */}
           <View style={{ alignItems: "center", marginTop: 80 }}>
             <Image
-              source={require("../assets/data2/Image 19.png")}  // Hình ảnh chính
+              source={require("../assets/data2/Image19.png")}  // Hình ảnh chính
               style={{ width: 70, height: 70 }}
               resizeMode="cover"
             />
