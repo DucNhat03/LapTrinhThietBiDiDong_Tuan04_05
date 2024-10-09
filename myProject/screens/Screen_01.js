@@ -46,7 +46,7 @@ export default function Screen_01({ navigation }) {
             justifyContent: "center",
             alignItems: "center",
           }}
-          onPress={() => navigation.navigate("Screen_02")}
+          onPress={() => navigation.navigate("Screen_03")}
         >
           <Text style={{fontSize: 20, fontWeight: 'none', color: 'black'}}>Login</Text>
         </TouchableOpacity>
